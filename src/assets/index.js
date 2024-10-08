@@ -1,3 +1,4 @@
+import tsukuyomi from "./tsukuyomi.svg"
 import brainwave from "./brainwave.svg";
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
@@ -36,6 +37,17 @@ import photoshop from "./collaboration/photoshop.png";
 import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
+import html from "./collaboration/html.png";
+import css from "./collaboration/css.png";
+import javascript from "./collaboration/javascript.png";
+import python from "./collaboration/python.png";
+import react from "./collaboration/react.png";
+import tailwindcss from "./collaboration/tailwindcss.png";
+import git from "./collaboration/git.png";
+import github from "./collaboration/github.png";
+import wordpress from "./collaboration/wordpress.png";
+import webflow from "./collaboration/webflow.png";
+
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
@@ -77,6 +89,7 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 export {
+  tsukuyomi,
   brainwave,
   check,
   check2,
@@ -113,6 +126,16 @@ export {
   protopie,
   raindrop,
   slack,
+  html,
+  css,
+  javascript,
+  python,
+  react,
+  tailwindcss,
+  git,
+  github,
+  wordpress,
+  webflow,
   service1,
   service2,
   service3,

@@ -4,14 +4,12 @@ import Button from "./Button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 
-const Collaboration = () => {
+const Skills = () => {
   return (
     <Section crosses>
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
-          <h2 className="h2 mb-4 md:mb-8">
-            AI Chat App for seamless collaboration
-          </h2>
+          <h2 className="h2 mb-4 md:mb-8">Web Developer & Tech Enthusiast</h2>
 
           <ul className="max-w-[22rem] mb-10 md:mb-14">
             {collabContent.map((item) => (
@@ -27,7 +25,7 @@ const Collaboration = () => {
             ))}
           </ul>
 
-          <Button>Try it now</Button>
+          <Button>Contact Me</Button>
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
@@ -83,4 +81,4 @@ const Collaboration = () => {
   );
 };
 
-export default Collaboration;
+export default Skills;

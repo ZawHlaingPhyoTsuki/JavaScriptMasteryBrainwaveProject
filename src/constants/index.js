@@ -10,6 +10,16 @@ import {
   discordBlack,
   facebook,
   figma,
+  html,
+  css,
+  javascript,
+  react,
+  python,
+  tailwindcss,
+  git,
+  github,
+  webflow,
+  wordpress,
   file02,
   framer,
   homeSmile,
@@ -128,78 +138,78 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "Combining skills in frontend technologies with ongoing education in backend frameworks to create full-stack applications.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "Building modern, responsive web applications",
+    text: "Utilizing the latest technologies to ensure optimal performance and user experience across devices.",
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Experienced in frontend and now learning backend development",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Proficient in React, Tailwind, and JavaScript",
   },
 ];
 
 export const collabApps = [
   {
     id: "0",
-    title: "Figma",
-    icon: figma,
-    width: 26,
+    title: "HTML",
+    icon: html,
+    width: 34,
     height: 36,
   },
   {
     id: "1",
-    title: "Notion",
-    icon: notion,
+    title: "CSS",
+    icon: css,
     width: 34,
     height: 36,
   },
   {
     id: "2",
-    title: "Discord",
-    icon: discord,
+    title: "Javascript",
+    icon: javascript,
     width: 36,
     height: 28,
   },
   {
     id: "3",
-    title: "Slack",
-    icon: slack,
+    title: "TailwindCSS",
+    icon: tailwindcss,
     width: 34,
     height: 35,
   },
   {
     id: "4",
-    title: "Photoshop",
-    icon: photoshop,
+    title: "React",
+    icon: react,
     width: 34,
     height: 34,
   },
   {
     id: "5",
-    title: "Protopie",
-    icon: protopie,
+    title: "Python",
+    icon: python,
     width: 34,
     height: 34,
   },
   {
     id: "6",
-    title: "Framer",
-    icon: framer,
+    title: "Git",
+    icon: git,
     width: 26,
     height: 34,
   },
   {
     id: "7",
-    title: "Raindrop",
-    icon: raindrop,
+    title: "Webflow",
+    icon: webflow,
     width: 38,
     height: 32,
   },
