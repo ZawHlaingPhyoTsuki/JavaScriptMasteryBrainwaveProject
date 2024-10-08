@@ -1,4 +1,5 @@
-import tsukuyomi from "./tsukuyomi.svg"
+import tsukuyomi from "./tsukuyomi.svg";
+import tsukuyomiSymbol from "./tsukuyomiSymbol.svg";
 import brainwave from "./brainwave.svg";
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
@@ -87,9 +88,13 @@ import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
+import twitterX from "./socials/twitterX.png";
+import gitHub from "./socials/github.svg";
+import linkedin from "./socials/linkedin.svg";
 
 export {
   tsukuyomi,
+  tsukuyomiSymbol,
   brainwave,
   check,
   check2,
@@ -169,4 +174,7 @@ export {
   instagram,
   telegram,
   twitter,
+  twitterX,
+  gitHub,
+  linkedin,
 };

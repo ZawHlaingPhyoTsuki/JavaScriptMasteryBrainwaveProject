@@ -23,9 +23,10 @@ const Hero = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
-            The Future of Web Development<br />
+            The Future of Web Development
+            <br />
             <span className="inline-block relative">
-              React Developer{" "}
+              React Programmer{" "}
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
@@ -35,13 +36,12 @@ const Hero = () => {
               />
             </span>
             <br />
-  
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             Crafting interactive, user-friendly applications with modern web
             technologies.
           </p>
-          <Button href="/pricing" white>
+          <Button href="#projects" white>
             Get started
           </Button>
         </div>

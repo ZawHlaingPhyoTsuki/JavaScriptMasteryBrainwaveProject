@@ -1,5 +1,5 @@
-import { brainwaveSymbol, check } from "../assets";
-import { collabApps, collabContent, collabText } from "../constants";
+import { brainwaveSymbol, check, tsukuyomiSymbol } from "../assets";
+import { skillIcons, collabContent, collabText } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
@@ -38,7 +38,7 @@ const Skills = () => {
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                   <img
-                    src={brainwaveSymbol}
+                    src={tsukuyomiSymbol}
                     width={48}
                     height={48}
                     alt="brainwave"
@@ -48,7 +48,7 @@ const Skills = () => {
             </div>
 
             <ul>
-              {collabApps.map((app, index) => (
+              {skillIcons.map((app, index) => (
                 <li
                   key={app.id}
                   className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${

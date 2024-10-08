@@ -43,24 +43,27 @@ import {
   sliders04,
   telegram,
   twitter,
+  twitterX,
+  gitHub,
+  linkedin,
   yourlogo,
 } from "../assets";
 
 export const navigation = [
   {
     id: "0",
-    title: "Features",
-    url: "#features",
+    title: "About",
+    url: "#about-me",
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "How to use",
+    url: "#how-to-use",
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Projects",
+    url: "#projects",
   },
   {
     id: "3",
@@ -156,7 +159,7 @@ export const collabContent = [
   },
 ];
 
-export const collabApps = [
+export const skillIcons = [
   {
     id: "0",
     title: "HTML",
@@ -307,32 +310,32 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    title: "Linkedin",
+    iconUrl: linkedin,
+    url: "https://www.linkedin.com/in/zaw-hlaing-phyo-6734052a2/",
   },
   {
     id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
+    title: "TwitterX",
+    iconUrl: twitterX,
+    url: "https://x.com/ZawHlaingPhyo",
   },
   {
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "#",
+    url: "https://www.instagram.com/tsukuyomi1123/",
   },
   {
     id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
+    title: "Github",
+    iconUrl: gitHub,
+    url: "https://github.com/ZawHlaingPhyoTsuki",
   },
   {
     id: "4",
     title: "Facebook",
     iconUrl: facebook,
-    url: "#",
+    url: "https://www.facebook.com/ZawHlaingPhyo.23",
   },
 ];
