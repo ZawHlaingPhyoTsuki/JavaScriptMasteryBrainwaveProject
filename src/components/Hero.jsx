@@ -37,7 +37,7 @@ const Hero = () => {
             </span>
             <br />
           </h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
+          <p className="body-1 mt-8 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             Crafting interactive, user-friendly applications with modern web
             technologies.
           </p>

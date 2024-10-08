@@ -110,16 +110,15 @@ export const roadmap = [
     title: "Voice recognition",
     text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
     date: "May 2023",
-    status: "done",
+    status: true,
     imageUrl: roadmap1,
-    colorful: true,
   },
   {
     id: "1",
     title: "Gamification",
     text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
     date: "May 2023",
-    status: "progress",
+    status: false,
     imageUrl: roadmap2,
   },
   {
@@ -127,7 +126,7 @@ export const roadmap = [
     title: "Chatbot customization",
     text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
     date: "May 2023",
-    status: "done",
+    status: true,
     imageUrl: roadmap3,
   },
   {
@@ -135,7 +134,7 @@ export const roadmap = [
     title: "Integration with APIs",
     text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
     date: "May 2023",
-    status: "progress",
+    status: false,
     imageUrl: roadmap4,
   },
 ];

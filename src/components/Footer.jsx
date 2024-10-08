@@ -2,9 +2,14 @@ import React from "react";
 import Section from "./Section";
 import { socials } from "../constants";
 
-const Footer = () => {
+const Footer = ({ className }) => {
   return (
-    <Section crosses className="!px-0 !py-10 flex flex-col gap-2 sm:gap-3">
+    <Section
+      crosses
+      className={`${
+        className || ""
+      } !px-0 !py-10 flex flex-col gap-2 sm:gap-3 `}
+    >
       <p className="caption text-n-3 container flex  items-center gap-10 text-center sm:text-left">
         Built following the tutorial: "Build and Deploy a Fully Responsive
         Website with Modern UI/UX in React JS with Tailwind" - JavaScript
