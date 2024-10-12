@@ -6,7 +6,7 @@ import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Tabs } from "flowbite-react";
 import { HiUserCircle } from "react-icons/hi";
 
@@ -26,12 +26,6 @@ const Header = () => {
     }
   };
 
-  // const handleClick = () => {
-  //   if (!openNavigation) return;
-
-  //   enablePageScroll();
-  //   setOpenNavigation(false);
-  // };
   const handleClick = () => {
     // Close navigation if it's open
     if (openNavigation) {
@@ -43,10 +37,31 @@ const Header = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  // for nav scrolling behavior
+  const [showHeader, setShowHeader] = useState(true);
+  let lastScrollTop = 0;
+
+  const handleScoll = () => {
+    let scrollTop = window.scrollY;
+    if (scrollTop > lastScrollTop) {
+      setShowHeader(false);
+    } else {
+      setShowHeader(true);
+    }
+    lastScrollTop = scrollTop;
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScoll);
+    return () => {
+      window.removeEventListener("scroll", handleScoll);
+    };
+  }, []);
+
   return (
-    <div
-      className={`fixed top-0 right-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
-        openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
+    <header
+      className={`fixed top-0 w-full z-50   border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
+        openNavigation ? "bg-n-8" : `bg-n-8/90 backdrop-blur-sm transition-transform duration-300 ${showHeader ? "translate-y-0" : "-translate-y-full"} `
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
@@ -61,7 +76,7 @@ const Header = () => {
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
-          } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+          } fixed top-[4.8rem]  left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) =>
@@ -132,7 +147,7 @@ const Header = () => {
           <MenuSvg openNavigation={openNavigation} />
         </Button>
       </div>
-    </div>
+    </header>
   );
 };
 
