@@ -61,7 +61,11 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 w-full z-50   border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
-        openNavigation ? "bg-n-8" : `bg-n-8/90 backdrop-blur-sm transition-transform duration-300 ${showHeader ? "translate-y-0" : "-translate-y-full"} `
+        openNavigation
+          ? "bg-n-8"
+          : `bg-n-8/90 backdrop-blur-sm transition-transform duration-300 ${
+              showHeader ? "translate-y-0" : "-translate-y-full"
+            } `
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
@@ -73,12 +77,13 @@ const Header = () => {
           <img src={tsukuyomi} width={190} height={40} alt="TSUKUYOMI" />
         </Link>
 
+        {/* humburger menu drop down page */}
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
           } fixed top-[4.8rem]  left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
-          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+          <div className="relative gap-1 z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) =>
               item.onlyMobile ? (
                 <Link

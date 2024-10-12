@@ -5,6 +5,7 @@ import { socials } from "../constants";
 const Footer = ({ className }) => {
   return (
     <Section
+      crossesOffset="lg:translate-y-[10]"
       crosses
       className={`${
         className || ""
