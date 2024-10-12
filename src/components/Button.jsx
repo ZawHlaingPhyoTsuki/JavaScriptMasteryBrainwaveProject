@@ -1,9 +1,17 @@
 import ButtonSvg from "../assets/svg/ButtonSvg";
 
-const Button = ({ className, href, onClick, children, px, white }) => {
-  const classes = `button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 ${
+const Button = ({
+  className,
+  href,
+  onClick,
+  children,
+  px,
+  white,
+  location
+}) => {
+  const classes = `button relative inline-flex items-center justify-center h-11 transition-colors ${"hover:text-color-1" && location === "/sign-in"}  ${
     px || "px-7"
-  } ${white ? "text-n-8" : "text-n-1"} ${className || ""}`;
+  } ${white  ? "text-n-8" : "text-n-1"} ${className || ""}`;
   const spanClasses = "relative z-10";
 
   const renderButton = () => (

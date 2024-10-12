@@ -13,9 +13,9 @@ import { Outlet } from 'react-router-dom';
 const MainLayout = () => {
   return (
     <main>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+      <div className="relative pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
-         <Outlet />
+        <Outlet />
         <Footer />
       </div>
 
@@ -25,3 +25,5 @@ const MainLayout = () => {
 }
 
 export default MainLayout
+
+// pt-[4.75rem]
