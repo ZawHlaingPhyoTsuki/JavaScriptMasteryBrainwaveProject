@@ -13,8 +13,51 @@
   color-scheme: dark;
 }
 
+
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e0c15;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ac6aff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #44315c;
+} */
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* Align the bar to the right side */
+  bottom: 0;
+  /* Stretch the bar from top to bottom */
+  width: 10px;
+  /* Make it a vertical bar with width instead of height */
+  background: linear-gradient(to bottom, #ac6aff, #44315c);
+  /* Color for the bar */
+  transform-origin: 0% 0%;
+  /* Transform origin to the top for scaling */
+}
+
+::-webkit-scrollbar {
+  display: hidden;
+}
+
 * {
   scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 @layer base {

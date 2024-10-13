@@ -21,6 +21,7 @@ import disc02 from "./disc-02.svg";
 import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
+import profile from "./profile-400x400.jpg";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
@@ -54,8 +55,9 @@ import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
 import service3 from "./services/service-3.png";
 
-import lines from "./pricing/lines.svg";
-import stars from "./pricing/stars.svg";
+import lines from "./project/lines.svg";
+import stars from "./project/stars.svg";
+import project1 from "./project/e-commence-project.png";
 
 import coins from "./roadmap/coins.png";
 import done from "./roadmap/done.svg";
@@ -116,6 +118,7 @@ export {
   chromecast,
   sliders04,
   loading,
+  profile,
   background,
   curve,
   robot,
@@ -146,6 +149,7 @@ export {
   service3,
   lines,
   stars,
+  project1,
   coins,
   done,
   hero,

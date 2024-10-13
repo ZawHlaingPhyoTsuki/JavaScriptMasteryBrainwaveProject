@@ -1,4 +1,4 @@
-import { loading } from "../assets";
+import { loading, profile } from "../assets";
 
 const Generating = ({ className }) => {
   return (
@@ -7,8 +7,8 @@ const Generating = ({ className }) => {
         className || ""
       } text-base`}
     >
-      <img className="w-5 h-5 mr-4" src={loading} alt="Loading" />
-      AI is generating
+      <img className="w-8 h-8 mr-4 rounded-full" src={profile} alt="profile" />
+      <code className="font-code">Hello, I'm Zaw Hlaing Phyo ...</code>
     </div>
   );
 };

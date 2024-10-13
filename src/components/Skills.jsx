@@ -3,10 +3,11 @@ import { skillIcons, collabContent, collabText } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <Section crosses>
+    <Section crosses id="skills">
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-4 md:mb-8">Web Developer & Tech Enthusiast</h2>
@@ -32,10 +33,15 @@ const Skills = () => {
           <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
             {collabText}
           </p>
-
-          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
-            <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
-              <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
+          {/* Skill icon bg circle part */}
+          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full  -translate-x-1/2 scale:75 md:scale-100 ">
+            <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full ">
+              <motion.div
+              initial={{ opacity: 0, y: 5,scale: 0.1 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+               className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                   <img
                     src={tsukuyomiSymbol}
@@ -44,16 +50,19 @@ const Skills = () => {
                     alt="brainwave"
                   />
                 </div>
-              </div>
+              </motion.div>
             </div>
 
             <ul>
               {skillIcons.map((app, index) => (
-                <li
+                <motion.li
                   key={app.id}
-                  className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
-                    index * 45
+                  className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom 
                   }`}
+                  initial={{ opacity: 0, y: 5 }}
+                  whileInView={{ opacity: 1, y: 0, rotate: index * 45 }}
+                  transition={{ duration: 1}}
+                  viewport={{ once: true }}
                 >
                   <div
                     className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${
@@ -68,7 +77,7 @@ const Skills = () => {
                       src={app.icon}
                     />
                   </div>
-                </li>
+                </motion.li>
               ))}
             </ul>
 

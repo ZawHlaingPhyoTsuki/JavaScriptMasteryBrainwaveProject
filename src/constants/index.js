@@ -1,3 +1,4 @@
+import { image } from "framer-motion/client";
 import {
   benefitIcon1,
   benefitIcon2,
@@ -47,6 +48,7 @@ import {
   gitHub,
   linkedin,
   yourlogo,
+  project1,
 } from "../assets";
 
 export const navigation = [
@@ -58,27 +60,32 @@ export const navigation = [
   },
   {
     id: "1",
+    title: "Skills",
+    url: "#skills",
+  },
+  {
+    id: "2",
     title: "How to use",
     url: "#how-to-use",
   },
   {
-    id: "2",
+    id: "3",
     title: "Projects",
     url: "#projects",
   },
   {
-    id: "3",
+    id: "4",
     title: "Roadmap",
     url: "#roadmap",
   },
   {
-    id: "4",
+    id: "5",
     title: "New account",
     url: "#signup",
     onlyMobile: true,
   },
   {
-    id: "5",
+    id: "6",
     title: "Sign in",
     url: "#login",
     onlyMobile: true,
@@ -218,12 +225,13 @@ export const skillIcons = [
   },
 ];
 
-export const pricing = [
+export const project = [
   {
     id: "0",
-    title: "Basic",
+    title: "Voucher App",
     description: "AI chatbot, personalized recommendations",
-    price: "0",
+    image: "",
+    url: "https://tsukuyomi-voucherapp.netlify.app/",
     features: [
       "An AI chatbot that can understand your queries",
       "Personalized recommendations based on your preferences",
@@ -232,9 +240,10 @@ export const pricing = [
   },
   {
     id: "1",
-    title: "Premium",
+    title: "E-Commence",
     description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    image: project1,
+    url: "https://tsukuyomi-ecommercesite.netlify.app/",
     features: [
       "An advanced AI chatbot that can understand complex queries",
       "An analytics dashboard to track your conversations",
@@ -243,9 +252,10 @@ export const pricing = [
   },
   {
     id: "2",
-    title: "Enterprise",
+    title: "Todo App",
     description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
+    image: null,
+    url: "https://tsukuyomi-todolistsite.netlify.app/",
     features: [
       "An AI chatbot that can understand your queries",
       "Personalized recommendations based on your preferences",

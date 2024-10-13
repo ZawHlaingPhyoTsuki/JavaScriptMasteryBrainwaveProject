@@ -83,11 +83,11 @@ const Header = () => {
             openNavigation ? "flex" : "hidden"
           } fixed top-[4.8rem]  left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
-          <div className="relative gap-1 z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+          <div className="relative  z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) =>
               item.onlyMobile ? (
                 <Link
-                  key={item.id} // Key directly on the Link element, it for mobile sign in
+                  key={item.id} // hamburger menu drop down sign in up
                   to={`/sign-in`}
                   onClick={handleClick}
                   className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
@@ -99,11 +99,11 @@ const Header = () => {
               ) : (
                 // !isSignInPage && (
                 <a
-                  key={item.id} // Key directly on the a element, both pc and mobile nav tabs
+                  key={item.id} // both pc and mobile nav tabs
                   href={item.url}
                   onClick={handleClick}
-                  className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
-                    item.onlyMobile || isSignInPage ? "lg:invisible" : ""
+                  className={` relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
+                    item.onlyMobile || isSignInPage ? "invisible" : "block"
                   } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                     item.url === location.hash
                       ? "z-2 lg:text-n-1"
@@ -120,37 +120,46 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        <Link
-          to={"/sign-up"}
-          className={`button hidden mr-8  text-n-1/50 transition-colors  lg:block  ${
-            location.pathname === "/sign-up" ? "text-color-1" : "hover:text-n-1"
-          } `}
-        >
-          New account
-        </Link>
+        {!isSignInPage && (
+          <>
+            <Link
+              to={"/sign-up"}
+              className={`button hidden mr-8   transition-colors  lg:block  ${
+                location.pathname === "/sign-up"
+                  ? "pointer-events-none text-color-1"
+                  : "hover:text-n-1 text-n-1/50"
+              } `}
+            >
+              New account
+            </Link>
 
-        <Link to={"/sign-in"}>
-          <Button
-            location={location.pathname}
-            className={`hidden lg:flex ${
-              location.pathname === "/sign-in" ? "text-color-1" : ""
-            }`}
-            // {...(location.pathname === "/sign-in" && { white: true })}
-          >
-            {/* {...(isSignInPage && { white: true })}
-             ...(isSignInPage && { white: true }): Conditionally spreads the white prop with a value of true when isSignInPage is true.
-{ isSignInPage && white }: This syntax would work if white were a variable, but it's not passing the prop white as expected. */}
-            Sign in
-          </Button>
-        </Link>
+            <Link
+              to={"/sign-in"}
+              className={` ${
+                location.pathname === "/sign-in"
+                  ? "pointer-events-none text-color-1"
+                  : "hover:text-n-1"
+              }`}
+            >
+              <Button
+                location={location.pathname}
+                className={`hidden lg:flex `}
+                {...(location.pathname === "/sign-in" && { purple: true })}
+                // {...(location.pathname === "/sign-in" && { white: true })}
+              >
+                Sign in
+              </Button>
+            </Link>
 
-        <Button
-          className="ml-auto lg:hidden"
-          px="px-3"
-          onClick={toggleNavigation}
-        >
-          <MenuSvg openNavigation={openNavigation} />
-        </Button>
+            <Button
+              className="ml-auto lg:hidden"
+              px="px-3"
+              onClick={toggleNavigation}
+            >
+              <MenuSvg openNavigation={openNavigation} />
+            </Button>
+          </>
+        )}
       </div>
     </header>
   );
