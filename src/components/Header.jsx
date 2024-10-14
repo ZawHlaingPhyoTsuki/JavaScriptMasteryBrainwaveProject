@@ -72,7 +72,7 @@ const Header = () => {
         <Link
           to={"/"}
           onClick={handleClick}
-          className="block w-[12rem] xl:mr-8"
+          className="block w-[10rem] md:w-[12rem] xl:mr-8"
         >
           <img src={tsukuyomi} width={190} height={40} alt="TSUKUYOMI" />
         </Link>

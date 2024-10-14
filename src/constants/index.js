@@ -48,11 +48,14 @@ import {
   gitHub,
   linkedin,
   yourlogo,
-  project1,
+  
+  OnlineShopping,
+  VoucherApp,
+  TodoList,
 } from "../assets";
+import { color } from "framer-motion";
 
 export const navigation = [
-  
   {
     id: "0",
     title: "About",
@@ -65,8 +68,8 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Innovations",
+    url: "#innovations",
   },
   {
     id: "3",
@@ -99,9 +102,9 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "Template Selection",
+  "Drag-and-Drop Functionality",
+  "Customizable Styling Options",
 ];
 
 export const brainwaveServicesIcons = [
@@ -115,32 +118,32 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
+    title: "Dark Mode",
+    text: "Implement a dark mode toggle for better accessibility and user comfort, especially during night-time browsing.",
     date: "May 2023",
     status: true,
     imageUrl: roadmap1,
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
+    title: "User Authentication",
+    text: "Add secure login and registration features to provide a personalized user experience.",
     date: "May 2023",
     status: false,
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
+    title: "Mobile Optimization",
+    text: "Further optimize projects and platforms for seamless mobile use, ensuring consistent performance across all devices.",
     date: "May 2023",
-    status: true,
+    status: false,
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
+    title: "Content Management System (CMS)",
+    text: "Enable users to manage and update content directly from the platform without needing technical knowledge.",
     date: "May 2023",
     status: false,
     imageUrl: roadmap4,
@@ -229,54 +232,59 @@ export const project = [
   {
     id: "0",
     title: "Voucher App",
-    description: "AI chatbot, personalized recommendations",
-    image: "",
+    description:
+      "A digital voucher system for businesses to manage customer rewards",
+    image: VoucherApp,
     url: "https://tsukuyomi-voucherapp.netlify.app/",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      " Secure management of digital vouchers",
+      "Easy redemption and tracking for users",
+      "Cost-effective solution for businesses",
     ],
+    color: "text-color-2",
   },
   {
     id: "1",
     title: "E-Commence",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    image: project1,
+    description:
+      "A fully functional e-commerce platform  to manage product listings and orders",
+    image: OnlineShopping,
     url: "https://tsukuyomi-ecommercesite.netlify.app/",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "Easy-to-use dashboard for adding and managing productss",
+      "Seamless checkout process",
+      "Order tracking and history for users",
     ],
+    color: "text-color-1",
   },
   {
     id: "2",
     title: "Todo App",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    image: null,
+    description: "A productivity app to help users manage tasks efficiently",
+    image: TodoList,
     url: "https://tsukuyomi-todolistsite.netlify.app/",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Add, edit, and delete tasks with ease",
+      "Task prioritization and reminders",
+      " A clean, user-friendly interface",
     ],
+    color: "text-color-3",
   },
 ];
 
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "About me ",
+    text: "I’m a Computer Science student majoring in Digital Technology Innovation, specializing in web development with a focus on React and full-stack applications.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Learning & Building",
+    text: "Combining theoretical knowledge with practical projects to grow as a developer.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -284,16 +292,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Frontend Focus",
+    text: "Mastering frontend technologies like React, JavaScript, and Tailwind to deliver seamless interfaces.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Full-Stack Journey",
+    text: "Transitioning into backend development with Node.js and MongoDB to become a full-stack developer.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -301,16 +309,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Creative Coding",
+    text: "Crafting unique solutions to everyday problems through code.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Tech Enthusiast",
+    text: "Constantly exploring new tools, frameworks, and libraries to stay up to date with industry trends.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,

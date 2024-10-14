@@ -18,7 +18,8 @@ const Footer = ({ className }) => {
       </p>
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
         <p className="caption text-n-4 lg:block">
-          © {new Date().getFullYear()}. All rights reserved.
+          © {new Date().getFullYear()}. All rights reserved by&nbsp;
+          <a className="text-n-2" href="mailto:tro2233zhp@gmail.com">tro2233zhp@gmail.com</a>
         </p>
 
         <ul className="flex gap-5 flex-wrap">

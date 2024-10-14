@@ -37,7 +37,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Roadmap from "../components/Roadmap";
-import Services from "../components/Services";
+import Services from "../components/Innovations";
 
 const HomePage = () => {
   return (

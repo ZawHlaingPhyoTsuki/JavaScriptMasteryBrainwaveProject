@@ -58,6 +58,10 @@ import service3 from "./services/service-3.png";
 import lines from "./project/lines.svg";
 import stars from "./project/stars.svg";
 import project1 from "./project/e-commence-project.png";
+import OnlineShopping from "./project/OnlineShopping.jfif"
+import TodoList from "./project/TodoList.jfif";
+import VoucherApp from "./project/VoucherApp.jfif";
+
 
 import coins from "./roadmap/coins.png";
 import done from "./roadmap/done.svg";
@@ -150,6 +154,9 @@ export {
   lines,
   stars,
   project1,
+  OnlineShopping,
+  TodoList,
+  VoucherApp,
   coins,
   done,
   hero,
