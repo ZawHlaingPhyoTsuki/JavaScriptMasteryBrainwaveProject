@@ -12,7 +12,7 @@ const ProjectCard = ({ item }) => (
 
     {/* Button & Features */}
     <div>
-      <Button className="w-full mb-6" href={item.url} white={!!item.price}>
+      <Button className="w-full mb-6" target="_blank" href={item.url} white={!!item.price}>
         See Project
       </Button>
 
