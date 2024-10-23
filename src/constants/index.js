@@ -231,15 +231,15 @@ export const skillIcons = [
 export const project = [
   {
     id: "0",
-    title: "Voucher App",
+    title: "Food Delivery",
     description:
-      "A digital voucher system for businesses to manage customer rewards",
+      "A MERN stack application that streamlines food delivery processes, allowing restaurants to manage orders and customers to track their deliveries easily.",
     image: VoucherApp,
-    url: "https://tsukuyomi-voucherapp.netlify.app/",
+    url: "https://mernfooddeliverywebsite-frontend.onrender.com/",
     features: [
-      " Secure management of digital vouchers",
-      "Easy redemption and tracking for users",
-      "Cost-effective solution for businesses",
+      "User authentication for secure access to accounts",
+      "User-friendly interface for tracking orders and delivery status",
+      "Integration of payment gateways for seamless transactions using Stripe",
     ],
     color: "text-color-2",
   },
